@@ -1,0 +1,17 @@
+﻿@model HeadHunter2.Models.City
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create New City Record</h2>
+
+@using (Html.BeginForm("Create", "City", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    </div>
+    <input type="submit" value="Submit" class="btn btn-success" />
+}
+

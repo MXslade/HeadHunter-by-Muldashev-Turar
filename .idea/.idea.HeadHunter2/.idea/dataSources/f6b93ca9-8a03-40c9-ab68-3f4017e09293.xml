@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="DefaultConnection">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.19">
+    <root id="1">
+      <ServerVersion>13.0.4001</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="HeadHunter.Models.ApplicationDbContext">
+      <ObjectId>6</ObjectId>
+    </database>
+    <database id="3" parent="1" name="Vidly.Models.ApplicationDbContext">
+      <ObjectId>5</ObjectId>
+    </database>
+    <database id="4" parent="1" name="aspnet-HeadHunter2-20201111125845">
+      <ObjectId>7</ObjectId>
+      <Current>1</Current>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Fingerprint>7.44144/95E791C7-A55F-4E35-860B-D85930DEBC85@DESKTOP-DU5CQB0\LOCALDB#06568672</Fingerprint>
+    </database>
+    <database id="5" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="8" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <schema id="9" parent="4" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="10" parent="4" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="11" parent="4" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="12" parent="4" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="13" parent="4" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="14" parent="4" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="15" parent="4" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="16" parent="4" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="17" parent="4" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="18" parent="4" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="19" parent="4" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2020-11-18.03:59:26.597</IntrospectionTimestamp>
+      <Current>1</Current>
+    </schema>
+    <schema id="20" parent="4" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="21" parent="4" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="22" parent="19" name="AspNetRoles">
+      <ObjectId>565577053</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.627</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.657</ModifiedTimestamp>
+    </table>
+    <table id="23" parent="19" name="AspNetUserClaims">
+      <ObjectId>661577395</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.650</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.660</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="19" name="AspNetUserLogins">
+      <ObjectId>693577509</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.653</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.660</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="19" name="AspNetUserRoles">
+      <ObjectId>597577167</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.640</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.660</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="19" name="AspNetUsers">
+      <ObjectId>629577281</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.647</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-17.23:38:33.490</ModifiedTimestamp>
+    </table>
+    <table id="27" parent="19" name="CVs">
+      <ObjectId>1269579561</ObjectId>
+      <CreatedTimestamp>2020-11-11.08:07:50.390</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.08:09:50.050</ModifiedTimestamp>
+    </table>
+    <table id="28" parent="19" name="Cities">
+      <ObjectId>1205579333</ObjectId>
+      <CreatedTimestamp>2020-11-11.08:07:50.350</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.08:07:50.410</ModifiedTimestamp>
+    </table>
+    <table id="29" parent="19" name="Companies">
+      <ObjectId>1525580473</ObjectId>
+      <CreatedTimestamp>2020-11-11.15:01:40.307</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-17.23:38:33.493</ModifiedTimestamp>
+    </table>
+    <table id="30" parent="19" name="Countries">
+      <ObjectId>1237579447</ObjectId>
+      <CreatedTimestamp>2020-11-11.08:07:50.390</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.08:07:50.413</ModifiedTimestamp>
+    </table>
+    <table id="31" parent="19" name="Positions">
+      <ObjectId>1877581727</ObjectId>
+      <CreatedTimestamp>2020-11-17.23:38:33.487</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-17.23:38:33.487</ModifiedTimestamp>
+    </table>
+    <table id="32" parent="19" name="UserCompanies">
+      <ObjectId>1845581613</ObjectId>
+      <CreatedTimestamp>2020-11-17.23:38:33.440</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-17.23:38:33.497</ModifiedTimestamp>
+    </table>
+    <table id="33" parent="19" name="__MigrationHistory">
+      <ObjectId>789577851</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.663</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.663</ModifiedTimestamp>
+    </table>
+    <column id="34" parent="22" name="Id">
+      <Position>1</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="22" name="Name">
+      <Position>2</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="36" parent="22" name="PK_dbo.AspNetRoles">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="37" parent="22" name="RoleNameIndex">
+      <Position>2</Position>
+      <ColNames>Name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="38" parent="22" name="PK_dbo.AspNetRoles">
+      <ObjectId>581577110</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.637</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.637</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_dbo.AspNetRoles</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="39" parent="23" name="Id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="23" name="UserId">
+      <Position>2</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="23" name="ClaimType">
+      <Position>3</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <column id="42" parent="23" name="ClaimValue">
+      <Position>4</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <index id="43" parent="23" name="PK_dbo.AspNetUserClaims">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="44" parent="23" name="IX_UserId">
+      <Position>2</Position>
+      <ColNames>UserId</ColNames>
+    </index>
+    <key id="45" parent="23" name="PK_dbo.AspNetUserClaims">
+      <ObjectId>677577452</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.653</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.653</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_dbo.AspNetUserClaims</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="46" parent="23" name="FK_dbo.AspNetUserClaims_dbo.AspNetUsers_UserId">
+      <ObjectId>757577737</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.660</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.660</ModifiedTimestamp>
+      <ColNames>UserId</ColNames>
+      <RefTableId>629577281</RefTableId>
+      <RefTableName>AspNetUsers</RefTableName>
+      <RefKeyName>PK_dbo.AspNetUsers</RefKeyName>
+      <RefColNames>Id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="47" parent="24" name="LoginProvider">
+      <Position>1</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="24" name="ProviderKey">
+      <Position>2</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="24" name="UserId">
+      <Position>3</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="50" parent="24" name="PK_dbo.AspNetUserLogins">
+      <Position>1</Position>
+      <ColNames>LoginProvider
+ProviderKey
+UserId</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="51" parent="24" name="IX_UserId">
+      <Position>2</Position>
+      <ColNames>UserId</ColNames>
+    </index>
+    <key id="52" parent="24" name="PK_dbo.AspNetUserLogins">
+      <ObjectId>709577566</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.653</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.653</ModifiedTimestamp>
+      <ColNames>LoginProvider
+ProviderKey
+UserId</ColNames>
+      <UnderlyingIndexName>PK_dbo.AspNetUserLogins</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="53" parent="24" name="FK_dbo.AspNetUserLogins_dbo.AspNetUsers_UserId">
+      <ObjectId>773577794</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.660</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.660</ModifiedTimestamp>
+      <ColNames>UserId</ColNames>
+      <RefTableId>629577281</RefTableId>
+      <RefTableName>AspNetUsers</RefTableName>
+      <RefKeyName>PK_dbo.AspNetUsers</RefKeyName>
+      <RefColNames>Id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="54" parent="25" name="UserId">
+      <Position>1</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="25" name="RoleId">
+      <Position>2</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="56" parent="25" name="PK_dbo.AspNetUserRoles">
+      <Position>1</Position>
+      <ColNames>UserId
+RoleId</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="57" parent="25" name="IX_UserId">
+      <Position>2</Position>
+      <ColNames>UserId</ColNames>
+    </index>
+    <index id="58" parent="25" name="IX_RoleId">
+      <Position>3</Position>
+      <ColNames>RoleId</ColNames>
+    </index>
+    <key id="59" parent="25" name="PK_dbo.AspNetUserRoles">
+      <ObjectId>613577224</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.640</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.640</ModifiedTimestamp>
+      <ColNames>UserId
+RoleId</ColNames>
+      <UnderlyingIndexName>PK_dbo.AspNetUserRoles</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="60" parent="25" name="FK_dbo.AspNetUserRoles_dbo.AspNetUsers_UserId">
+      <ObjectId>741577680</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.660</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.660</ModifiedTimestamp>
+      <ColNames>UserId</ColNames>
+      <RefTableId>629577281</RefTableId>
+      <RefTableName>AspNetUsers</RefTableName>
+      <RefKeyName>PK_dbo.AspNetUsers</RefKeyName>
+      <RefColNames>Id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="61" parent="25" name="FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId">
+      <ObjectId>725577623</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.657</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.657</ModifiedTimestamp>
+      <ColNames>RoleId</ColNames>
+      <RefTableId>565577053</RefTableId>
+      <RefTableName>AspNetRoles</RefTableName>
+      <RefKeyName>PK_dbo.AspNetRoles</RefKeyName>
+      <RefColNames>Id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="62" parent="26" name="Id">
+      <Position>1</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="26" name="Email">
+      <Position>2</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+    </column>
+    <column id="64" parent="26" name="EmailConfirmed">
+      <Position>3</Position>
+      <DataType>bit|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="26" name="PasswordHash">
+      <Position>4</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <column id="66" parent="26" name="SecurityStamp">
+      <Position>5</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <column id="67" parent="26" name="PhoneNumber">
+      <Position>6</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <column id="68" parent="26" name="PhoneNumberConfirmed">
+      <Position>7</Position>
+      <DataType>bit|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="26" name="TwoFactorEnabled">
+      <Position>8</Position>
+      <DataType>bit|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="26" name="LockoutEndDateUtc">
+      <Position>9</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="71" parent="26" name="LockoutEnabled">
+      <Position>10</Position>
+      <DataType>bit|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="26" name="AccessFailedCount">
+      <Position>11</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="26" name="UserName">
+      <Position>12</Position>
+      <DataType>nvarchar(256 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="26" name="Birthdate">
+      <Position>13</Position>
+      <DefaultConstraintName>DF__AspNetUse__Birth__34C8D9D1</DefaultConstraintName>
+      <DefaultExpression>&apos;1900-01-01T00:00:00.000&apos;</DefaultExpression>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="75" parent="26" name="Gender">
+      <Position>14</Position>
+      <DefaultConstraintName>DF__AspNetUse__Gende__35BCFE0A</DefaultConstraintName>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="26" name="FullName">
+      <Position>15</Position>
+      <DefaultConstraintName>DF__AspNetUse__FullN__36B12243</DefaultConstraintName>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+      <DataType>nvarchar(max)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="77" parent="26" name="PK_dbo.AspNetUsers">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="78" parent="26" name="UserNameIndex">
+      <Position>2</Position>
+      <ColNames>UserName</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="79" parent="26" name="PK_dbo.AspNetUsers">
+      <ObjectId>645577338</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.650</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.650</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_dbo.AspNetUsers</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <default id="80" parent="26" name="DF__AspNetUse__Birth__34C8D9D1">
+      <ObjectId>885578193</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-11-11.06:27:12.373</ModifiedTimestamp>
+      <ColNames>Birthdate</ColNames>
+      <DefaultExpression>&apos;1900-01-01T00:00:00.000&apos;</DefaultExpression>
+    </default>
+    <default id="81" parent="26" name="DF__AspNetUse__Gende__35BCFE0A">
+      <ObjectId>901578250</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-11-11.06:27:12.377</ModifiedTimestamp>
+      <ColNames>Gender</ColNames>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </default>
+    <default id="82" parent="26" name="DF__AspNetUse__FullN__36B12243">
+      <ObjectId>917578307</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2020-11-11.06:31:09.530</ModifiedTimestamp>
+      <ColNames>FullName</ColNames>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </default>
+    <column id="83" parent="27" name="Id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="84" parent="27" name="ApplicationUserId">
+      <Position>2</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+    </column>
+    <column id="85" parent="27" name="CityId">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="27" name="CountryId">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="27" name="Salary">
+      <Position>5</Position>
+      <DataType>float|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="27" name="About">
+      <Position>6</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <column id="89" parent="27" name="Title">
+      <Position>7</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <index id="90" parent="27" name="PK_dbo.CVs">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="91" parent="27" name="IX_ApplicationUserId">
+      <Position>2</Position>
+      <ColNames>ApplicationUserId</ColNames>
+    </index>
+    <index id="92" parent="27" name="IX_CityId">
+      <Position>3</Position>
+      <ColNames>CityId</ColNames>
+    </index>
+    <index id="93" parent="27" name="IX_CountryId">
+      <Position>4</Position>
+      <ColNames>CountryId</ColNames>
+    </index>
+    <key id="94" parent="27" name="PK_dbo.CVs">
+      <ObjectId>1285579618</ObjectId>
+      <CreatedTimestamp>2020-11-11.08:07:50.393</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.08:07:50.393</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_dbo.CVs</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="95" parent="27" name="FK_dbo.CVs_dbo.AspNetUsers_ApplicationUserId">
+      <ObjectId>1301579675</ObjectId>
+      <CreatedTimestamp>2020-11-11.08:07:50.410</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.08:07:50.410</ModifiedTimestamp>
+      <ColNames>ApplicationUserId</ColNames>
+      <RefTableId>629577281</RefTableId>
+      <RefTableName>AspNetUsers</RefTableName>
+      <RefKeyName>PK_dbo.AspNetUsers</RefKeyName>
+      <RefColNames>Id</RefColNames>
+    </foreign-key>
+    <foreign-key id="96" parent="27" name="FK_dbo.CVs_dbo.Cities_CityId">
+      <ObjectId>1317579732</ObjectId>
+      <CreatedTimestamp>2020-11-11.08:07:50.410</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.08:07:50.410</ModifiedTimestamp>
+      <ColNames>CityId</ColNames>
+      <RefTableId>1205579333</RefTableId>
+      <RefTableName>Cities</RefTableName>
+      <RefKeyName>PK_dbo.Cities</RefKeyName>
+      <RefColNames>Id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="97" parent="27" name="FK_dbo.CVs_dbo.Countries_CountryId">
+      <ObjectId>1333579789</ObjectId>
+      <CreatedTimestamp>2020-11-11.08:07:50.413</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.08:07:50.413</ModifiedTimestamp>
+      <ColNames>CountryId</ColNames>
+      <RefTableId>1237579447</RefTableId>
+      <RefTableName>Countries</RefTableName>
+      <RefKeyName>PK_dbo.Countries</RefKeyName>
+      <RefColNames>Id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="98" parent="28" name="Id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="99" parent="28" name="Name">
+      <Position>2</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <index id="100" parent="28" name="PK_dbo.Cities">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="101" parent="28" name="PK_dbo.Cities">
+      <ObjectId>1221579390</ObjectId>
+      <CreatedTimestamp>2020-11-11.08:07:50.390</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.08:07:50.390</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_dbo.Cities</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="102" parent="29" name="Id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="103" parent="29" name="Name">
+      <Position>2</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <column id="104" parent="29" name="Description">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <index id="105" parent="29" name="PK_dbo.Companies">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="106" parent="29" name="PK_dbo.Companies">
+      <ObjectId>1541580530</ObjectId>
+      <CreatedTimestamp>2020-11-11.15:01:40.357</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.15:01:40.357</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_dbo.Companies</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="107" parent="30" name="Id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="108" parent="30" name="Name">
+      <Position>2</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <index id="109" parent="30" name="PK_dbo.Countries">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="110" parent="30" name="PK_dbo.Countries">
+      <ObjectId>1253579504</ObjectId>
+      <CreatedTimestamp>2020-11-11.08:07:50.390</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.08:07:50.390</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_dbo.Countries</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="111" parent="31" name="Id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="112" parent="31" name="Name">
+      <Position>2</Position>
+      <DataType>nvarchar(max)|0s</DataType>
+    </column>
+    <index id="113" parent="31" name="PK_dbo.Positions">
+      <Position>1</Position>
+      <ColNames>Id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="114" parent="31" name="PK_dbo.Positions">
+      <ObjectId>1893581784</ObjectId>
+      <CreatedTimestamp>2020-11-17.23:38:33.487</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-17.23:38:33.487</ModifiedTimestamp>
+      <ColNames>Id</ColNames>
+      <UnderlyingIndexName>PK_dbo.Positions</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="115" parent="32" name="ApplicationUserId">
+      <Position>1</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="116" parent="32" name="CompanyId">
+      <Position>2</Position>
+      <DataType>nvarchar(128 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="117" parent="32" name="Company_Id">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="118" parent="32" name="PK_dbo.UserCompanies">
+      <Position>1</Position>
+      <ColNames>ApplicationUserId
+CompanyId</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="119" parent="32" name="IX_ApplicationUserId">
+      <Position>2</Position>
+      <ColNames>ApplicationUserId</ColNames>
+    </index>
+    <index id="120" parent="32" name="IX_Company_Id">
+      <Position>3</Position>
+      <ColNames>Company_Id</ColNames>
+    </index>
+    <key id="121" parent="32" name="PK_dbo.UserCompanies">
+      <ObjectId>1861581670</ObjectId>
+      <CreatedTimestamp>2020-11-17.23:38:33.480</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-17.23:38:33.480</ModifiedTimestamp>
+      <ColNames>ApplicationUserId
+CompanyId</ColNames>
+      <UnderlyingIndexName>PK_dbo.UserCompanies</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="122" parent="32" name="FK_dbo.UserCompanies_dbo.AspNetUsers_ApplicationUserId">
+      <ObjectId>1909581841</ObjectId>
+      <CreatedTimestamp>2020-11-17.23:38:33.490</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-17.23:38:33.490</ModifiedTimestamp>
+      <ColNames>ApplicationUserId</ColNames>
+      <RefTableId>629577281</RefTableId>
+      <RefTableName>AspNetUsers</RefTableName>
+      <RefKeyName>PK_dbo.AspNetUsers</RefKeyName>
+      <RefColNames>Id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="123" parent="32" name="FK_dbo.UserCompanies_dbo.Companies_Company_Id">
+      <ObjectId>1925581898</ObjectId>
+      <CreatedTimestamp>2020-11-17.23:38:33.493</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-17.23:38:33.493</ModifiedTimestamp>
+      <ColNames>Company_Id</ColNames>
+      <RefTableId>1525580473</RefTableId>
+      <RefTableName>Companies</RefTableName>
+      <RefKeyName>PK_dbo.Companies</RefKeyName>
+      <RefColNames>Id</RefColNames>
+    </foreign-key>
+    <column id="124" parent="33" name="MigrationId">
+      <Position>1</Position>
+      <DataType>nvarchar(150 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="125" parent="33" name="ContextKey">
+      <Position>2</Position>
+      <DataType>nvarchar(300 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="126" parent="33" name="Model">
+      <Position>3</Position>
+      <DataType>varbinary(max)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="127" parent="33" name="ProductVersion">
+      <Position>4</Position>
+      <DataType>nvarchar(32 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="128" parent="33" name="PK_dbo.__MigrationHistory">
+      <Position>1</Position>
+      <ColNames>MigrationId
+ContextKey</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="129" parent="33" name="PK_dbo.__MigrationHistory">
+      <ObjectId>805577908</ObjectId>
+      <CreatedTimestamp>2020-11-11.06:11:46.667</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-11.06:11:46.667</ModifiedTimestamp>
+      <ColNames>MigrationId
+ContextKey</ColNames>
+      <UnderlyingIndexName>PK_dbo.__MigrationHistory</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

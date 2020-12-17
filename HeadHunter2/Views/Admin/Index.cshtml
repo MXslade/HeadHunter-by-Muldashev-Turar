@@ -1,0 +1,80 @@
+﻿@model HeadHunter2.ViewModels.AdminViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Admin Panel</h2>
+
+<h3>Countries @Html.ActionLink("Add", "New", "Country", null, new { @class = "btn btn-success" })</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col" style="width: 15%">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col" style="width: 15%">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var country in Model.Countries)
+        {
+            <tr>
+                <th scope="row">@country.Id</th>
+                <td>@country.Name</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", "Country", new { country_id = country.Id }, new { @class = "btn btn-warning" })
+                    @Html.ActionLink("Delete", "Delete", "Country", new { country_id = country.Id }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<h3>Cities @Html.ActionLink("Add", "New", "City", null, new { @class = "btn btn-success" })</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col" style="width: 15%">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col" style="width: 15%">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var city in Model.Cities)
+    {
+        <tr>
+            <th scope="row">@city.Id</th>
+            <td>@city.Name</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", "City", new { city_id = city.Id }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Delete", "Delete", "City", new { city_id = city.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<h3>ProfessionalFields @Html.ActionLink("Add", "New", "ProfessionalField", null, new { @class = "btn btn-success" })</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col" style="width: 15%">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col" style="width: 15%">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var professionalField in Model.ProfessionalFields)
+    {
+        <tr>
+            <th scope="row">@professionalField.Id</th>
+            <td>@professionalField.Name</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", "ProfessionalField", new { professional_field_id = professionalField.Id }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Delete", "Delete", "ProfessionalField", new { professional_field_id = professionalField.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

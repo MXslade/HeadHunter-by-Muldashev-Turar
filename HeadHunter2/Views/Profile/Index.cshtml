@@ -1,0 +1,34 @@
+﻿@model HeadHunter2.Models.ApplicationUser
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mb-4">Profile of @Model.FullName</h2>
+
+
+<h4>Full Name: @Model.FullName</h4>
+<h4>Email: @Model.Email</h4>
+<h4>Date of birth: @Model.Birthdate.ToString("d MMMM yyyy")</h4>
+<h4>Gender: @Model.Gender</h4>
+@{
+    if (Model.PhoneNumber.IsEmpty())
+    {
+        <div class="alert alert-danger" role="alert">
+            Phone number is not specified
+        </div>
+        using (@Html.BeginForm("AddPhoneNumber", "Profile", FormMethod.Post))
+        {
+            <div class="form-group">
+                @Html.LabelFor(m => m.PhoneNumber)
+                @Html.TextBoxFor(m => m.PhoneNumber, new {@class = "form-control"})
+            </div>
+            <button type="submit" class="btn btn-primary">Add Phone Number</button>
+        }
+    }
+    else
+    {
+        <h4>Phone Number: @Model.PhoneNumber</h4>
+    }
+}
+ 

@@ -1,0 +1,39 @@
+﻿@using HeadHunter2.Models
+@model HeadHunter2.ViewModels.UserCVsViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mb-4">CVs Of @Model.User.FullName</h2>
+
+@if (Model.CVs.Count > 0)
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Edit</th>
+        </tr>
+        </thead>
+        <tbody>
+        @for (int i = 1; i <= Model.CVs.Count; ++i)
+        {
+            <tr>
+                <th scope="row">@i</th>
+                <td>@Model.CVs.ElementAt(i - 1).Title</td>
+                <td>@Model.CVs.ElementAt(i - 1).Salary</td>
+                <td><a href="/MyCVs/Edit/@Model.CVs.ElementAt(i - 1).Id" class="btn btn-primary">Edit</a></td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <h3 class="mb-4">@Model.User.FullName doesn't have any CV yet</h3>
+}
+
+@Html.ActionLink("Add new cv", "New", "CV", null, new {@class="btn btn-primary"})

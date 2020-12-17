@@ -1,0 +1,17 @@
+﻿@model HeadHunter2.Models.ProfessionalField
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create New Professional Field</h2>
+
+@using (Html.BeginForm("Create", "ProfessionalField", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    </div>
+    <input type="submit" value="Submit" class="btn btn-success" />
+}
+

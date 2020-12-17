@@ -1,0 +1,17 @@
+﻿@model HeadHunter2.Models.City
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit @Model.Name</h2>
+
+@using (Html.BeginForm("Edit", "City", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", value = Model.Name })
+    </div>
+    @Html.HiddenFor(m => m.Id, new { value = Model.Id })
+    <input type="submit" value="Submit" class="btn btn-success" />
+}
