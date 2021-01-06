@@ -61,3 +61,8 @@ D:\Disciplines\C#\HeadHunter2\HeadHunter2\UnitTestProject1\bin\Debug\System.Net.
 D:\Disciplines\C#\HeadHunter2\HeadHunter2\UnitTestProject1\bin\Debug\System.Web.Http.xml
 D:\Disciplines\C#\HeadHunter2\HeadHunter2\UnitTestProject1\bin\Debug\EntityFramework.SqlServer.dll
 D:\Disciplines\C#\HeadHunter2\HeadHunter2\UnitTestProject1\bin\Debug\EntityFramework.SqlServer.xml
+D:\Disciplines\C#\HeadHunter2\HeadHunter2\UnitTestProject1\bin\Debug\Syncfusion.Compression.Base.dll
+D:\Disciplines\C#\HeadHunter2\HeadHunter2\UnitTestProject1\bin\Debug\Syncfusion.Licensing.dll
+D:\Disciplines\C#\HeadHunter2\HeadHunter2\UnitTestProject1\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\Disciplines\C#\HeadHunter2\HeadHunter2\UnitTestProject1\bin\Debug\Syncfusion.Compression.Base.xml
+D:\Disciplines\C#\HeadHunter2\HeadHunter2\UnitTestProject1\bin\Debug\Syncfusion.Pdf.Base.xml

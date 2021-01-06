@@ -1,7 +1,29 @@
-﻿@{
+﻿@model ICollection<HeadHunter2.Models.CV>
+
+@{
     ViewBag.Title = "Home Page";
 }
 
 <div class="row">
+    <h4>Available CVs for you to view</h4>
     
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Owner</th>
+            <th scope="col">Title</th>
+            <th scope="col">See full</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var cv in Model)
+        {
+            <tr>
+                <td>@cv.ApplicationUser.FullName</td>
+                <td>@cv.Title</td>
+                <td>@Html.ActionLink("See More", "Index", "CVShow", new {cv_id = cv.Id}, new {@class="btn btn-info"})</td>
+            </tr>
+        }
+        </tbody>
+    </table>
 </div>

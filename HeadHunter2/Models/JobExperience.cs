@@ -48,12 +48,23 @@ namespace HeadHunter2.Models
             var result = end.Subtract(BeginDate).TotalDays;
             if (result > 365)
             {
-                return (result / 365).ToString() + " years";
+                return String.Format("{0:0.00}", result / 365) + " years";
             }
             else
             {
-                return (result / 30).ToString() + " months";
+                return String.Format("{0:0.00}", result / 30) + " months";
             }
+        }
+
+        public String ShowEndDate()
+        {
+            DateTime date = EndDate ?? DateTime.Now;
+            if (date == DateTime.Now)
+            {
+                return "";
+            }
+
+            return date.ToString("MMMM yyyy");
         }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)

@@ -54,6 +54,15 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Syncfusion.Compression.Base, Version=18.4460.0.31, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Compression.Base.18.4.0.31\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=18.4460.0.31, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.18.4.0.31\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=18.4450.0.31, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Pdf.AspNet.Mvc5.18.4.0.31\lib\net45\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -185,6 +194,7 @@
     <Compile Include="Controllers\CountryController.cs" />
     <Compile Include="Controllers\CvApiController.cs" />
     <Compile Include="Controllers\CVController.cs" />
+    <Compile Include="Controllers\CVShowController.cs" />
     <Compile Include="Controllers\EducationApiController.cs" />
     <Compile Include="Controllers\EducationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -234,6 +244,10 @@
     <Compile Include="Migrations\202012081952250_RefactoringJobExperiencesTable1.cs" />
     <Compile Include="Migrations\202012081952250_RefactoringJobExperiencesTable1.Designer.cs">
       <DependentUpon>202012081952250_RefactoringJobExperiencesTable1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012212224330_AddViewTypeToCV.cs" />
+    <Compile Include="Migrations\202012212224330_AddViewTypeToCV.Designer.cs">
+      <DependentUpon>202012212224330_AddViewTypeToCV.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -484,6 +498,8 @@
     <Content Include="Views\JobExperience\Edit.cshtml" />
     <Content Include="Views\Education\Create.cshtml" />
     <Content Include="Views\JobExperience\Create.cshtml" />
+    <Content Include="Views\CV\ShowCV.cshtml" />
+    <Content Include="Views\CVShow\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -523,6 +539,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012081952250_RefactoringJobExperiencesTable1.resx">
       <DependentUpon>202012081952250_RefactoringJobExperiencesTable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012212224330_AddViewTypeToCV.resx">
+      <DependentUpon>202012212224330_AddViewTypeToCV.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

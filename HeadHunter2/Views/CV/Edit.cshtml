@@ -8,6 +8,42 @@
 
 <h4 class="mb-4">Edit CV</h4>
 
+@{Html.BeginForm("CreateDocument", "CV", FormMethod.Get);
+    {
+        <input type="hidden" name="cv_id" value="@Model.CV.Id"/>
+        <div>
+            <input type="submit" class="btn btn-info" value="Create Document"/>
+        </div>
+    }
+    Html.EndForm();
+}
+
+@using (Html.BeginForm("EditViewType", "CV", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group row">
+        <label class="col-md-2 col-form-label">Who can view this CV:</label>
+        <div class="col-md-10">
+            <select name="view_type" class="form-control">
+                <option value="0" @if (Model.CV.ViewType == 0){Output.WriteLine("selected");}>Can be viewed by registered users</option>
+                <option value="1" @if (Model.CV.ViewType == 1){Output.WriteLine("selected");}>Can be viewed by the link</option>
+                <option value="2" @if (Model.CV.ViewType == 2){Output.WriteLine("selected");}>Open to whole internet</option>
+            </select>
+        </div>
+        <input type="hidden"name="cv_id" value="@Model.CV.Id"/>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-10 offset-2">
+            <button type="submit" class="btn btn-success">Update View Type</button>
+        </div>
+    </div>
+}
+
+@if (Model.CV.ViewType == 1)
+{
+    <p>https://localhost:44316/CVShow?cv_id=@Model.CV.Id</p>
+}
+
 @using (Html.BeginForm("SaveEdit", "CV", FormMethod.Post, new { role = "form" }))
 {
     @Html.AntiForgeryToken()
@@ -44,7 +80,7 @@
     <input type="hidden" name="CV.ApplicationUserId" value="@Model.User.Id" />
     <input type="hidden" name="CV.Id" value="@Model.CV.Id" />
     <div class="form-group row">
-        <div class="col-md-offset-2 col-md-10">
+        <div class="offset-2 col-md-10">
             <input type="submit" class="btn btn-primary" value="Save" />
             @Html.ActionLink("Delete", "Delete", "CV", new { Id = Model.CV.Id }, new { @class = "btn btn-danger" })
         </div>
@@ -121,7 +157,7 @@
         <div class="jumbotron">
             <h1 class="display-4">@jobExperience.CompanyName</h1>
             <h3>Faculty: @jobExperience.Position</h3>
-            <p class="lead">@jobExperience.BeginDate - @jobExperience.EndDate</p>
+            <p class="lead">@jobExperience.BeginDate.ToString("MMMM yyyy") - @jobExperience.ShowEndDate()</p>
             <hr class="my-4">
             <p>Duration: @jobExperience.CountDuration()</p>
             @Html.ActionLink("Edit", "Edit", "JobExperience", new { jobExperienceId = @jobExperience.Id }, new { @class = "btn btn-warning" })
